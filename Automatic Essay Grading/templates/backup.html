@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>"Automated Essay Score"</title>
+
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.container {
+  margin: 5px auto;
+  padding: 80px;
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 37%;
+  left: 15%;
+  transform: translate(-10%, -10%);
+}
+ul {
+  list-style-type: none;1
+  margin: 0;
+  padding: 0;
+  align-content: center;
+  overflow: hidden;
+  background-color: #004d80
+}
+
+li {
+	float:left;
+
+}
+
+li a {
+  display: block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+li {
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+.active{
+	background-color: #4CAF50
+}
+h1{
+	color: #006bb3;
+}
+html { 
+  no-repeat center fixed; 
+  background-size: cover;
+}
+body{
+  text-decoration: none;
+  margin: -15px auto;
+  background-image: url(/static/lol5.jpg);
+  background-size: cover;
+  background-attachment: fixed; 
+  background-position: center;
+}
+
+</style>
+<body>
+   
+<div>
+	<ul>
+   <li><a href="/main">Home</a></li>
+  <li><a href="http://cs229.stanford.edu/proj2014/Alex%20Adamson,%20Andrew%20Lamb,%20Ralph%20Ma,%20Automated%20Essay%20Grading.pdf">Overview</a></li>
+  <li><a href="https://www.kaggle.com/c/asap-aes/data">Data</a></li>
+  <li><a href="https://windowsreport.com/automated-essay-grading-software/">About</a></li>
+</ul>
+
+</div>
+<div id="share-buttons"><p align="right">
+    
+            
+    <!-- Email -->
+    <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com">
+        <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+    </a>
+ 
+    <!-- Facebook -->
+    <a href="http://www.facebook.com/" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+    </a>
+    
+    <!-- Google+ -->
+    <a href="https://plus.google.com/" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+    </a>
+    
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+    </a>
+    
+       
+    
+    <!-- Twitter -->
+    <a href="https://twitter.com/" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+    </a>
+    
+    </p>
+  </div>
+<h1><center><font   font-family = "sans-serif" color="black">AUTOMATED ESSAY SCORER</font></center></h1>
+<h1><center><font   font-family = "sans-serif" color="red">Results</font></center></h1>
+
+<div class="container">
+  
+  <img src="/static/lol7.jpg" alt="Snow" style="width:40%;">
+   <div class="centered">
+    <h1>Grading</h1><center>
+    <h2>LSA+SVR : {{ status1 }}</h2></center>
+    <h2>SVR : {{ status2}}</h2></center>
+   </div>
+  
+</div>
+
+<div class="container">
+  
+  <img src="/static/lol7.jpg" alt="Snow" style="width:40%;">
+   <div class="centered">
+<center><h1>strength weakness analysis</h1></center>
+<center><h2>Total Character:- {{ status3 }}</h2></center>
+<center><h2>Total Sentences:- {{ status4 }}</h2></center>
+<center><h2>Total Word:-{{ status5 }}</h2></center>
+<center><h2>Total Lemmas:-{{ status6 }}</h2></center>
+<center><h2>Total mispell words:-{{ status7 }}</h2></center>
+<center><h2>Total Noun Count:-{{ status8 }}</h2></center>
+<center><h2>Total adjective:-{{ status9 }}</h2></center>
+<center><h2>Total verb:-{{ status10 }}</h2></center>
+<center><h2>Total adverb:-{{ status11 }}</h2></center>
+   </div>
+</div>
+</body>
+</html>
+
+

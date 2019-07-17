@@ -1,0 +1,30 @@
+<!DOCTYPE html><html>
+<head>
+	<title>"Problem Statement"</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<style>
+body {
+  background-color: #3AAFA9;
+}
+  
+h1 {
+  text-transform: uppercase;
+  color: white;
+}
+ 
+p {
+	color:#17252A;
+	
+}
+</style>
+</head>
+<body>
+	<h1 style="background-color:#2B7A78;">Problem Statement</h1>
+	<p style="background-color:#DEF2F1;"> Develop an Automated Grading Algorithm for Student-written Essays.That, algorithm will be used in university in future to grade  the student on the basis of past years. This algorithm evaluate the essay on the basis of Support Vector Regression, Latent Semantic Analysis and Cohen Kappa value in order to evaluate the model accuracy.We wanted to learn which features were more useful in predicting the score of the essay. In order to do so, we removed features one at a time and ran the pipeline to calculate the kappa score.</p>
+	<h2>Approaches</h2> 
+	<p>We had first clean our essay set from training data containing noise,after cleaning essay-set 2 contains domain1 score, domain2 score while the rest essay set have only domain1 score for that nan value of domain2 score will be replaced with 0 and then merged together in "score" column.</p>
+	<h3>Model Selection</h3>
+	<p>Firstly, Bag Of Words were extracted from each essay by Count Vectroizer Method but this will create memory issue hence Tfid Vectroizer Method will be used with ngrams of (1,3) and the max features will be taken of about 1500 and there pickel file will be saved in order to use later while doing prediction these were refers to "Latent Semantic Analysis". Secondly, "Natural Language Tool Kit" refers to nltk will be downloaded with stopwords, missspell dictionary and all the necessary library stated in pdf file. By using nltk we had calculated the "unique words", "count-words", "miss-spell", "Sentence-count", "Noun", "Adjective", "Verb", "Adverb" etc these were refers to the features of "Support Vector Regression". 2 models we had created to grade the student, first model focussed on LSA and the second model based on LSA + SVR. Since, we had continous values of score hence initially we had tried to use Decision Tree  whose accuracy is 91% in our 1 approach but this create overfitted model,later we had used Linear Regression model whose accuracy is 80% with Lasso its acuracy is near to 83%, thus we go though "LR".In our 2 approach we had used "Support Vector Regressor" model and saved the pickle file of both model.  </p>  
+
+</body>
+</html>

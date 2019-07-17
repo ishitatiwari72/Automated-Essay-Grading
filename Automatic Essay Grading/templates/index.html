@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+
+{% block code %}
+
+<form action="{{ url_for('output') }}" method="post">
+ <center><textarea name="antshant" placeholder="Please enter your essay" rows="15" cols="70"></textarea></center>
+ <center><input type="submit" name="sub" value="Send"></center>
+</form>
+  
+  {% endblock %}
+  

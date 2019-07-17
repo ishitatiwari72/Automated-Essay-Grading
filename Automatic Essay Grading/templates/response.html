@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>"Automated Essay Score"</title>
+
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 30px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.centered {
+  position: absolute;
+  top: 80%;
+  left: 15%;
+  transform: translate(-10%, -10%);
+}
+  .centered1{
+  position: absolute;
+  top: 63%;
+  left: 70%;
+  transform: translate(-10%, -10%);
+}
+ul {
+  list-style-type: none;1
+  margin: 0;
+  padding: 0;
+  align-content: center;
+  overflow: hidden;
+  background-color: #004d80
+}
+
+li {
+	float:left;
+
+}
+
+li a {
+  display: block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+li {
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+.active{
+	background-color: #4CAF50
+}
+h1{
+	color: #006bb3;
+}
+html { 
+  no-repeat center fixed; 
+  background-size: cover;
+}
+body{
+  text-decoration: none;
+  margin: -15px auto;
+  background-image: url(/static/lol5.jpg);
+  background-size: cover;
+  background-attachment: fixed; 
+  background-position: center;
+}
+
+</style>
+<body>
+   
+<div>
+	<ul>
+   <li><a href="/main">Home</a></li>
+  <li><a href="https://drive.google.com/open?id=1Sx-_EAZ879JPbFeYjjGsZAXt-uv9hcrQ">Overview</a></li>
+  <li><a href="/static/approach.html">Approach</a></li>
+  <li><a href="mailto: ishitatiwari625@gmail.com, bharatmathur47@gmail.com?Subject=Subject text">Contact Us</a></li>
+</ul>
+
+</div>
+<div id="share-buttons"><p align="right">
+    
+            
+    <!-- Email -->
+    <a href="mailto: ishitatiwari625@gmail.com, bharatmathur47@gmail.com?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com">
+        <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+    </a>
+ 
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/ishita.tiwari.581187" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+    </a>
+    
+    <!-- Google+ -->
+    <a href="https://plus.google.com/" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+    </a>
+    
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/ishita-tiwari-874aba185/" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+    </a>
+    
+       
+    
+    <!-- Twitter -->
+    <a href="https://twitter.com/bharatmathur47" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+    </a>
+    
+    </p>
+  </div>
+<h1><center><font   font-family = "sans-serif" color="black">AUTOMATED ESSAY SCORER</font></center></h1>
+<h1><center><font   font-family = "sans-serif" color="Brown">Results</font></center></h1>
+
+<div class="row">
+  <div class="column">  
+  <img src="/static/lol7.jpg" alt="Snow" hspace="30" height="750" width="560">
+</div>
+<div class="column">
+    <img src="/static/lol11.jpg" alt="Snow" hspace="300" height="750" width="560">
+  </div>
+</div>
+   <div class="centered">
+    <h1>Grading</h1><center>
+    <h2>LSA+SVR : {{ status1 }}</h2></center>
+    <h2>SVR : {{ status2}}</h2></center>
+   </div>
+  
+
+
+<div class="centered1">
+<center><h1> Strength analysis</h1></center>
+<center><h3>  Total Character:- {{ status3 }}</h3></center>
+<center><h3>  Total Sentences:- {{ status4 }}</h3></center>
+<center><h3>  Total Word:-{{ status5 }}</h3></center>
+<center><h3>  Total Lemmas:-{{ status6 }}</h3></center>
+<center><h3>  Total mispell words:-{{ status7 }}</h3></center>
+<center><h3>  Total Noun Count:-{{ status8 }}</h3></center>
+<center><h3>  Total adjective:-{{ status9 }}</h3></center>
+<center><h3>  Total verb:-{{ status10 }}</h3></center>
+<center><h3>  Total adverb:-{{ status11 }}</h3></center>
+</div>
+</body>
+</html>
+
+
